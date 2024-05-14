@@ -1,0 +1,51 @@
+//  Waxaa Jiro 3-dax Qaab oo lo abuuro Vairables marka la joogo Javascript 
+
+//  1 = var
+//  2 = const
+//  3 = let
+
+
+Sure, here's a comparison between var, let, and const in JavaScript:
+
+ 1 Scope:
+
+var: Function-scoped or globally scoped, but not block-scoped (prior to ES6).
+let: Block-scoped, meaning they are only accessible within the block they are defined in (e.g., loops, conditionals, or any {}).
+const: Also block-scoped like let.
+
+
+ 2 Hoisting:
+
+var: Variables are hoisted to the top of their function or global scope. They can be accessed before they are declared, but their value will be undefined.
+let: Variables are hoisted to the top of their block, but not initialized. They cannot be accessed before they are declared.
+const: Hoisted like let. Must be initialized with a value when declared.
+
+3 Reassignment:
+
+var: Can be reassigned.
+let: Can be reassigned.
+const: Cannot be reassigned.
+
+ 4 Re-declaration:
+
+var: Can be re-declared within the same scope.
+let: Cannot be re-declared within the same scope.
+const: Cannot be re-declared within the same scope.
+ 5 Initialization:
+
+var: Not required. If not initialized, the variable's value will be undefined.
+let: Not required, but if accessed before initialization, it will result in a ReferenceError.
+const: Must be initialized with a value when declared.
+
+ 6 Mutability:
+
+var: N/A.
+let: Variables can be reassigned different values.
+const: Cannot be reassigned, but if the variable is an object or array, its properties or elements can still be mutated.
+
+ 7 Recommended Use:
+
+var: Should be avoided due to hoisting and less predictable scoping.
+let: Use for variables that need to be reassigned.
+const: Use by default for variables that won't be reassigned, as it provides immutability and clearer code.
+Understanding these differences is crucial for writing clean and maintainable JavaScript code.
